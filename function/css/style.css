@@ -1,0 +1,92 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+/*use Eau Sans font*/
+
+body{
+    background-color: #fff;
+    background: url("../image/10.jpg") no-repeat center center fixed ;
+    -webkit-background-size: cover; /*chrome safari*/
+    -moz-background-size: cover; /*firefox*/
+    -o-background-size: cover; /*opera*/
+    background-size: cover;
+    margin: 0;
+    /*外边距*/
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    background: #1e1b1e url("../image/travelworthy-logo.gif") no-repeat;
+    width: 230px;
+    height: 180px;
+    float: left;
+    text-indent: 100%;
+    /*	定义基于父元素宽度的百分比的缩进。*/
+    white-space: nowrap;
+    /*文本不会换行，文本会在在同一行上继续，直到遇到 <br> 标签为止。*/
+    overflow: hidden;
+    margin: 0;
+}
+
+h2{
+    margin: 1.75em 0 0 0;
+    color: #adffda;
+    font-weight: normal;
+}
+
+h2 + p{
+    margin: 0.25em 0 0 0 ;
+}
+
+p + p{
+    margin: 0;
+}
+
+p + h2{
+    margin: 10px 0 0 0 ;
+}
+
+#info{
+    background-color: #1e1b1e;
+    color: #fff;
+    width: 200px;
+    padding: 0 15px;
+    text-align: center;
+    min-height: 100%;
+    position: absolute;
+    /*绝对定位*/
+    top: 0;
+    right: 0%;
+}
+
+#hotelName{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 120%;
+    margin-top: 10px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 10px 0px;
+}
+
+#roomRate{
+    text-decoration: line-through;
+    display: inline-block;
+    /*垂直居中*/
+    float: left;
+    padding-top: 10px;
+}
+
+#specialRate {
+    font-size: 440%;
+    color: #ffb87a;
+    display: inline-block;
+    padding: 10px 0 20px 0;
+    margin: 0;
+}
+
+#offerEnds {
+    text-transform: uppercase;
+    color: #ffb87a;
+    font-size: 75%;
+}
+
+
