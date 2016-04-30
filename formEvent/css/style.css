@@ -1,0 +1,150 @@
+@import url(http://fonts.googleapis.com/css?family=Wellfleet);
+
+body{
+    background-color: #000;
+    font-family: 'Wellfleet', 'Futura', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#page{
+    background-color: #403c3b;
+    margin: 0 auto 0 auto;
+}
+
+h1{
+    background-image: url(../image/kinglogo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    text-indent: -1000%;
+    height: 75px;
+    line-height: 75px;
+    width: 117px;
+    margin: 0 auto 0 auto;
+    padding: 30px 10px 20px 10px;
+}
+
+h2{
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    margin: 0 0 23px 0;
+}
+
+/*Form样式*/
+form{
+    padding: 0 60px 65px 60px;
+}
+
+label{
+    color: #ffffff;
+    display: block;
+    margin: 10px 0 10px 0;
+    font-size: 24px;
+}
+
+select, option{
+    font-size: 16px;
+}
+
+#feedback.warning {background-image: url('../image/warning.png');}
+#feedback.tip {background-image: url('../image/tip.png');}
+
+#packageHint{
+    color: #fff;
+    background-image: url("../image/hint.png");
+    background-repeat: no-repeat;
+    background-position: 2px 5px;
+    padding-left: 22px;
+}
+/*套餐提示*/
+
+.selectBox{
+    letter-spacing: 0.5em;
+    display: inline;
+}
+
+#termsHint{
+    color: #fff;
+    background-image: url("../image/warning.png");
+    background-repeat: no-repeat;
+    background-position: 2px 5px;
+    padding-left: 22px;
+}
+
+#packageHint #termsHint{
+    color: #fff;
+    text-shadow: -1px 1px 2px #000;
+}
+
+#terms{
+    margin-top: 30px;
+}
+
+.checkBox{
+    display: inline;
+    font-size: 16px;
+}
+
+input[type='submit']{
+    background-color: #cb6868;
+    color: #f3dad1;
+    border:none;
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin-top: 10px;
+    float: right;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+input[type='submit']:hover{
+    background-color: #d75359;
+    color: #f3dad1;
+    cursor: pointer;   /*悬浮指针为小手指*/
+    box-shadow: none;
+    position: relative;
+    top: 1px;
+}
+
+/*小屏幕 app样式演示*/
+@media only screen and (max-width: 500px) {
+    body{
+        background-color: #403c3b;
+    }
+    #page{
+        max-width: 480px;
+    }
+}
+
+@media only screen and (min-width: 501px) adn (max-width: 767px) {
+    #page{
+        max-width: 480px;
+        margin: 20px auto 20px auto;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    #page {
+        max-width: 480px;
+        margin: 20px auto 20px auto;
+    }
+}
+
+/*大屏显示app效果*/
+@media only screen and (min-width: 960px) {
+    #page {
+        max-width: 480px;
+        margin: 20px auto 20px auto;
+    }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    h1{
+        background-image: url(../image/2xkinglogo.png);
+        background-size: 72px 72px;
+    }
+}
